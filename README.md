@@ -66,38 +66,7 @@ streamlit run streamlit_app.py
 5. **Clear Results**:
    - Use the 🗑️ button in the top right to clear current query and results
 
-## Project Structure
 
-```
-RAG_Application/
-├── src/
-│   ├── __init__.py
-│   ├── data_loader.py      # Document loading from various formats
-│   ├── embedding.py         # Text chunking and embedding generation
-│   ├── vectorstore.py       # FAISS vector store implementation
-│   └── search.py            # RAG search and LLM integration
-├── streamlit_app.py         # Main Streamlit application
-├── requirements.txt          # Python dependencies
-├── .env                     # Environment variables (create this)
-├── .gitignore
-└── README.md
-```
-
-## Configuration
-
-### Environment Variables
-
-- `OPENAI_API_KEY`: Your OpenAI API key (required)
-
-### File Size Limits
-
-- Maximum file size: 50MB (configurable in `streamlit_app.py`)
-
-### Vector Store
-
-- Default location: `faiss_store/`
-- Index file: `faiss_store/faiss.index`
-- Metadata file: `faiss_store/meta.pkl`
 
 ## Technologies Used
 
@@ -124,33 +93,4 @@ RAG_Application/
 - Context-aware responses using retrieved documents
 - Source attribution for transparency
 - Handles cases where no relevant information is found
-
-## Troubleshooting
-
-### Common Issues
-
-1. **"OPENAI_API_KEY not found"**
-   - Ensure you have created a `.env` file with your API key
-   - Check that the key is correctly formatted
-
-2. **"No documents loaded"**
-   - Verify file format is supported
-   - Check file size is under the limit
-   - Ensure files are not corrupted
-
-3. **Import errors**
-   - Make sure virtual environment is activated
-   - Run `pip install -r requirements.txt` again
-
-## License
-
-This project is open source and available for personal and commercial use.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Support
-
-For issues and questions, please open an issue on the repository.
 
