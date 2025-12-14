@@ -1,0 +1,15 @@
+# Core application packages
+streamlit==1.39.0
+python-dotenv==1.2.1
+
+# Vector store and embeddings
+faiss-cpu==1.13.1
+sentence-transformers==5.2.0
+numpy==2.3.5
+
+# LangChain packages
+langchain==1.1.3
+langchain-community==0.4.1
+langchain-core==1.1.3
+langchain-openai==1.1.2
+langchain-text-splitters==1.0.0
